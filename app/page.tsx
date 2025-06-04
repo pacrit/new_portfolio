@@ -39,13 +39,13 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <Button variant="outline" size="icon" asChild>
-              <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/pacrit/" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </Link>
             </Button>
             <Button variant="outline" size="icon" asChild>
-              <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <Link href="www.linkedin.com/in/patrick-wesley-78b01a148" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -70,19 +70,19 @@ export default function Home() {
           <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Patrick W. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="icon" asChild>
-              <Link href="mailto:your.email@example.com">
+              <Link href="mailto:patrick.carneiro13@gmail.com">
                 <Mail className="h-4 w-4" />
                 <span className="sr-only">Email</span>
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/pacrit/" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4" />
                 <span className="sr-only">GitHub</span>
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <Link href="www.linkedin.com/in/patrick-wesley-78b01a148" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Link>

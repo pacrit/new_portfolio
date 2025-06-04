@@ -15,7 +15,7 @@ export function ProjectsSection() {
       image: "/placeholder.svg?height=400&width=600",
       tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
       liveUrl: "https://project-demo.com",
-      githubUrl: "https://github.com/yourusername/project",
+      githubUrl: "https://github.com/pacrit/eComm",
     },
     {
       title: "Task Management App",
@@ -24,7 +24,7 @@ export function ProjectsSection() {
       image: "/placeholder.svg?height=400&width=600",
       tags: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
       liveUrl: "https://project-demo.com",
-      githubUrl: "https://github.com/yourusername/project",
+      githubUrl: "https://github.com/pacrit/ToDo-List-i3",
     },
     {
       title: "Weather Dashboard",
