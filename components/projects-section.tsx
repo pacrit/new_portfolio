@@ -14,7 +14,7 @@ export function ProjectsSection() {
         "A full-stack e-commerce platform with product listings, cart functionality, user authentication, and payment processing.",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      liveUrl: "https://project-demo.com",
+      liveUrl: "https://ecommercedemonstracao.vercel.app/",
       githubUrl: "https://github.com/pacrit/eComm",
     },
     {
@@ -23,7 +23,7 @@ export function ProjectsSection() {
         "A collaborative task management application with real-time updates, task assignments, and progress tracking.",
       image: "/placeholder.svg?height=400&width=600",
       tags: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
-      liveUrl: "https://project-demo.com",
+      liveUrl: "https://listask.vercel.app/",
       githubUrl: "https://github.com/pacrit/ToDo-List-i3",
     },
     {
