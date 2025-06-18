@@ -32,7 +32,7 @@ export function ProjectsSection() {
       image: "/placeholder.svg?height=400&width=600",
       tags: ["React", "OpenWeather API", "Chart.js", "Geolocation"],
       liveUrl: "https://project-demo.com",
-      githubUrl: "https://github.com/yourusername/project",
+      githubUrl: "https://github.com/pacrit/weather_query",
     },
   ]
 
@@ -89,7 +89,7 @@ export function ProjectsSection() {
         </div>
         <div className="text-center mt-12">
           <Button variant="outline" asChild>
-            <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/pacrit" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-4 w-4" />
               See more on GitHub
             </Link>
