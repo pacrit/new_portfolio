@@ -12,7 +12,7 @@ export function ProjectsSection() {
       title: "E-commerce Platform",
       description:
         "A full-stack e-commerce platform with product listings, cart functionality, user authentication, and payment processing.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://res.cloudinary.com/deu4zjoq9/image/upload/v1750255346/picture_eComm_yisvka.png?height=400&width=600",
       tags: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
       liveUrl: "https://ecommercedemonstracao.vercel.app/",
       githubUrl: "https://github.com/pacrit/eComm",
@@ -21,7 +21,7 @@ export function ProjectsSection() {
       title: "Task Management App",
       description:
         "A collaborative task management application with real-time updates, task assignments, and progress tracking.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://res.cloudinary.com/deu4zjoq9/image/upload/v1750255871/picture_task_q8t9hf.png?height=400&width=600",
       tags: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
       liveUrl: "https://listask.vercel.app/",
       githubUrl: "https://github.com/pacrit/ToDo-List-i3",
@@ -29,7 +29,7 @@ export function ProjectsSection() {
     {
       title: "Weather Dashboard",
       description: "A weather dashboard that displays current weather conditions and forecasts for multiple locations.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://res.cloudinary.com/deu4zjoq9/image/upload/v1750257784/picture_weather_qzlrll.png?height=400&width=600",
       tags: ["React", "OpenWeather API", "Chart.js", "Geolocation"],
       liveUrl: "https://project-demo.com",
       githubUrl: "https://github.com/pacrit/weather_query",

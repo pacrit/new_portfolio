@@ -32,7 +32,7 @@ export function HeroSection() {
         <div className="flex-1 flex justify-center md:justify-end animate-in">
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/20">
             <Image
-              src="/placeholder.svg?height=400&width=400"
+              src="https://res.cloudinary.com/deu4zjoq9/image/upload/v1750258691/picture_me_yclmon.jpg?height=400&width=400"
               alt="Patrick W."
               fill
               className="object-cover"
