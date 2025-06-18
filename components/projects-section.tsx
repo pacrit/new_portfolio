@@ -31,7 +31,7 @@ export function ProjectsSection() {
       description: "A weather dashboard that displays current weather conditions and forecasts for multiple locations.",
       image: "https://res.cloudinary.com/deu4zjoq9/image/upload/v1750257784/picture_weather_qzlrll.png?height=400&width=600",
       tags: ["React", "OpenWeather API", "Chart.js", "Geolocation"],
-      liveUrl: "https://project-demo.com",
+      liveUrl: "https://weather-query-sage.vercel.app/",
       githubUrl: "https://github.com/pacrit/weather_query",
     },
   ]
