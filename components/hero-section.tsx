@@ -23,7 +23,7 @@ export function HeroSection() {
               <Link href="#projects">View My Work</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <Link href="/resume.pdf" target="_blank">
+              <Link href="https://drive.google.com/uc?export=download&id=1CGNSVMv1zcDSQJJP_IAZ4pHEaZC-UplU" target="_blank">
                 Download Resume
               </Link>
             </Button>
