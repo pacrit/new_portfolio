@@ -45,7 +45,7 @@ export default function Home() {
               </Link>
             </Button>
             <Button variant="outline" size="icon" asChild>
-              <Link href="www.linkedin.com/in/patrick-wesley-78b01a148" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/patrick-wesley-78b01a148" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -82,7 +82,7 @@ export default function Home() {
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="www.linkedin.com/in/patrick-wesley-78b01a148" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/patrick-wesley-78b01a148" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-4 w-4" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
