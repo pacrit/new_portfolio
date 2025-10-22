@@ -1,30 +1,33 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowDown } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { useLanguage } from "@/contexts/language-context"
 
 export function HeroSection() {
+  const { t } = useLanguage()
+
   return (
     <section id="about" className="relative py-20 md:py-32 overflow-hidden">
       <div className="container flex flex-col md:flex-row items-center gap-8 md:gap-16">
         <div className="flex-1 space-y-6 animate-in">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Hi, I'm Patrick W.</h1>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">{t('heroTitle')}</h1>
           <p className="text-xl text-muted-foreground">
-            A passionate Full Stack Developer specializing in React.js and Node.js. I love building clean, efficient,
-            and user-friendly web applications.
+            {t('heroDescription')}
           </p>
           <p className="text-lg text-muted-foreground">
-            "Just a ambitious, smart and very curious guy loving new tech's. Learning quickly and keeping update. Never
-            forget semicolon. Sometimes works at first. And always giving the code clean."
+            {t('heroQuote')}
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Button size="lg" asChild>
-              <Link href="#projects">View My Work</Link>
+              <Link href="#projects">{t('viewMyWork')}</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="https://drive.google.com/uc?export=download&id=1CGNSVMv1zcDSQJJP_IAZ4pHEaZC-UplU" target="_blank">
-                Download Resume
+                {t('downloadResume')}
               </Link>
             </Button>
           </div>

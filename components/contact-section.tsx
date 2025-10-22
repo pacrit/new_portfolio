@@ -11,9 +11,11 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
+import { useLanguage } from "@/contexts/language-context"
 
 export function ContactSection() {
   const { toast } = useToast()
+  const { t } = useLanguage()
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -36,9 +38,9 @@ export function ContactSection() {
     <section id="contact" className="py-20">
       <div className="container">
         <div className="text-center space-y-4 mb-16 animate-in">
-          <h2 className="text-3xl md:text-4xl font-bold">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">{t('contactTitle')}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+            {t('contactDescription')}
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 animate-in">

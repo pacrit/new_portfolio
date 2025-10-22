@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 
@@ -8,8 +10,12 @@ import { SkillsSection } from "@/components/skills-section"
 import { ExperienceSection } from "@/components/experience-section"
 import { ContactSection } from "@/components/contact-section"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { LanguageToggle } from "@/components/language-toggle"
+import { useLanguage } from "@/contexts/language-context"
 
 export default function Home() {
+  const { t } = useLanguage()
+
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -21,22 +27,23 @@ export default function Home() {
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
-              About
+              {t('about')}
             </Link>
             <Link href="#skills" className="text-sm font-medium hover:underline underline-offset-4">
-              Skills
+              {t('skills')}
             </Link>
             <Link href="#projects" className="text-sm font-medium hover:underline underline-offset-4">
-              Projects
+              {t('projects')}
             </Link>
             <Link href="#experience" className="text-sm font-medium hover:underline underline-offset-4">
-              Experience
+              {t('experience')}
             </Link>
             <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">
-              Contact
+              {t('contact')}
             </Link>
           </nav>
           <div className="flex items-center gap-2">
+            <LanguageToggle />
             <ThemeToggle />
             <Button variant="outline" size="icon" asChild>
               <Link href="https://github.com/pacrit/" target="_blank" rel="noopener noreferrer">
@@ -52,7 +59,7 @@ export default function Home() {
             </Button>
             <Button className="hidden md:flex" asChild>
               <Link href="#contact">
-                Contact Me <ArrowRight className="ml-2 h-4 w-4" />
+                {t('contactMe')} <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
@@ -67,7 +74,7 @@ export default function Home() {
       </main>
       <footer className="border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Patrick W. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Patrick W. {t('allRightsReserved')}</p>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="icon" asChild>
               <Link href="mailto:patrick.carneiro13@gmail.com">

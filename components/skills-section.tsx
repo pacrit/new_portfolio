@@ -1,8 +1,13 @@
+"use client"
+
 import { Code, Database, Layout, Server, Terminal, Workflow } from "lucide-react"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { useLanguage } from "@/contexts/language-context"
 
 export function SkillsSection() {
+  const { t } = useLanguage()
+  
   const skills = [
     {
       category: "Frontend",
@@ -40,10 +45,9 @@ export function SkillsSection() {
     <section id="skills" className="py-20 bg-muted/50">
       <div className="container">
         <div className="text-center space-y-4 mb-16 animate-in">
-          <h2 className="text-3xl md:text-4xl font-bold">My Skills</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">{t('skillsTitle')}</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I've worked with a variety of technologies in the web development world. Here's a snapshot of my technical
-            expertise:
+            {t('skillsDescription')}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-in">
